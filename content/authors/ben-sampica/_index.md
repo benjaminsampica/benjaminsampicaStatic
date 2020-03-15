@@ -64,7 +64,7 @@ email: ""
 user_groups: []
 ---
 
-My first experience with computers was watching my oldest brother rig up a baud modem to our brand new Windows 1993 computer and play Warcraft II with his friend across town.
+My first experience with computers was watching my oldest brother rig up a baud modem to our brand new Windows 1995 computer and play Warcraft II with his friend across town.
 The resulting thousand-dollar internet bill and my parents anger at my brother taught me nothing - I've been hooked on computers ever since.
 
 I currently work as a Web Application Developer for Polk County in Des Moines and have been since 2016. I utilize the .NET stack to create web applications that help Polk County better serve its residents.
