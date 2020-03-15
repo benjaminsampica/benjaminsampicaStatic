@@ -12,5 +12,3 @@ title = "Biography"
 # See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
 author = "ben-sampica"
 +++
-
-{{< gallery album="gallery" >}}
