@@ -18,27 +18,52 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  title = "Web Application Developer"
+  company = "Polk County"
+  company_url = "https://www.polkcountyiowa.gov"
+  location = "Des Moines"
+  date_start = "2016-06-26"
   date_end = ""
   description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
+  Responsibilities include -
+  * Full-stack web development
+  * Administrating our Azure DevOps environment 
+  * Being a change agent for Agile Principles & Values
+  * Mentoring and being contagiously positive to other developers.
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
+  title = "IT Service Coordinator"
+  company = "The Members Group"
+  company_url = "https://www.co-opfs.org/"
+  location = "Urbandale"
   date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  date_end = "2016-06-24"
+  description = """
+  Responsibilities included - 
+  * Took Help Desk Support calls and logged tickets.
+  * Resolved Tier 1 - Tier 3 (Non-Application Development) tickets.
+  * Trained incoming Tier 1 employees on common issues and
+application-specific workflows.
+  """
+
+[[experience]]
+  title = "IT Intern"
+  company = "Mercer"
+  company_url = "https://www.co-opfs.org/"
+  location = "Urbandale"
+  date_start = "2015-05-01"
+  date_end = "2015-08-24"
+  description = """
+  Responsibilities included - 
+  * Updated, created, and maintained company SharePoint sites.
+  * Led project to create a SharePoint consistency template among
+team sites.
+  * Created automation scripts with Selenium in Java for largescale automation testing.
+  * Wrote documentation for SharePoint from both a users and
+developers point of view.
+  * Updated VBA-based software to improve search accuracy and
+added in new systems.
+  """
 
 +++
