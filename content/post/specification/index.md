@@ -4,7 +4,7 @@ subtitle: 'DRY-ly filter collections with the specification pattern'
 authors:
 - ben-sampica
 categories:
-- C#
+- CSharp
 - EF Core
 date: "2020-03-14T00:00:00Z"
 featured: false
