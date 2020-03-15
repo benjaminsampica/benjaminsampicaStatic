@@ -44,7 +44,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Rantings and ravings from an apprentice software craftsman."
+description = "Belief in the Machine Spirit - journey of a tech priest and apprentice software craftsman."
 
 ############################
 ## Site Features
@@ -113,7 +113,7 @@ contact_links = [
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = "https://pbs.twimg.com/profile_images/1171918264462712833/u_0j8r2u_400x400.jpg"
+sharing_image = "share.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter = "BenjaminSampica"
