@@ -34,7 +34,7 @@ hero_media = ""
   text_color_light = true
 +++
 
-## Like the millions before and those still yet to come, my journey started with "Hello World"
+## Like the millions before and those still yet to come, my journey started with "Hello World".
 
 ## I naively began thinking, 
 

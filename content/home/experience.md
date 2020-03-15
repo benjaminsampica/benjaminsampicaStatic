@@ -28,8 +28,8 @@ date_format = "Jan 2006"
   Responsibilities include -
   * Full-stack web development
   * Administrating our Azure DevOps environment 
-  * Being a change agent for Agile Principles & Values
-  * Mentoring and being contagiously positive to other developers.
+  * Being a change agent for both Agile & Scrum principles/values
+  * Mentoring and being contagiously positive to other developers
   """
 
 [[experience]]
