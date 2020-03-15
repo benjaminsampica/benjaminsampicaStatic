@@ -138,10 +138,7 @@ public class HasGivenYearContractSpecification : Specification<Player>
         _year = year;
     }
     
-    public override Expression<Func<Player, bool>> ToExpression()
-    {
-        return player => player.ContractLength >= _year;
-    }
+    public override Expression<Func<Player, bool>> ToExpression() => player => player.ContractLength >= _year;
 }
 ```
 
