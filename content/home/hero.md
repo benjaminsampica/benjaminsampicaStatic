@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 29  # Order that this section will appear.
 
-title = "The Guy Behind The Screen"
+title = "The Man Behind The Curtain"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = ""
@@ -32,17 +32,16 @@ hero_media = ""
   
   # Text color (true=light or false=dark).
   text_color_light = true
-
 +++
 
-**Like the millions before and those still yet to come, my journey started with "Hello World"** 
+## Like the millions before and those still yet to come, my journey started with "Hello World"
 
-I naively began thinking, 
+## I naively began thinking, 
 
-"Wow, I know a lot!" 
+### "Wow, I know a lot!" 
 
-and every day since 
+## and every day since 
 
-I've slowly realized
+## I've slowly realized
 
-I hardly know anything...
+## **_I hardly know anything..._**

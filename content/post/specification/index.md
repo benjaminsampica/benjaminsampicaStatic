@@ -1,6 +1,6 @@
 ---
 title: 'C# Specification Pattern'
-subtitle: 'DRY-ly filter collections with the specification pattern'
+subtitle: 'DRY-ly filter models with the specification pattern'
 authors:
 - ben-sampica
 categories:

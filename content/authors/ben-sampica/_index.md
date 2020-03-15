@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Web Application Developer
+role: .NET Stack Developer
 
 # Organizations/Affiliations
 organizations:
@@ -66,8 +66,7 @@ user_groups: []
 
 I currently work as a Web Application Developer for Polk County in Des Moines and have been since 2016.
 
-I utilize SQL, C#, EF, and LINQ to create .NET MVC web applications in various browser languages that help Polk County better serve
-its residents.
+I utilize the .NET stack to create web applications that help Polk County better serve its residents.
 
 I graduated from the University of Northern Iowa with a bachelor's degree in Management Information Systems in May of 2016. I
 also graduated in 2012 with a associate's degree as a Computer Support Specialist.
