@@ -238,7 +238,7 @@ team.Players.Where(p => new HasGivenYearContractSpecification(2020).IsSatisfiedB
 
 or if you have multiple specifications you can compare each individually or add another extension method
 ```
-public static bool SatifiesFilters<T>(this T entity, IEnumerable<Specification<T>> filters = null)
+public static bool SatisfiesFilters<T>(this T entity, IEnumerable<Specification<T>> filters = null)
 {
     if (filters != null)
     {
