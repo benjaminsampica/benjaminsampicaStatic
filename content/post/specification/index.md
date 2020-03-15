@@ -42,7 +42,7 @@ The pattern is the _Specification_ pattern and it ultimately serves one purpose:
 
 By keeping it separate, we can chain business rules together and reuse them so as to maintain DRYness. As always though use common sense when choosing whether or not to apply a pattern. Don't contract _pattern fever_!
 
-You can take this pattern and do some very powerful things with it. I've found myself writing methods against a repository that had certain parameters but ultimately was against the same repository. Consider the following:
+You can take this pattern and do some very powerful things with it. I've found myself writing methods extracting data from a repository but ultimately there was little difference between methods. I've also found myself doing the same but having _god_ methods. Consider the following:
 
 ```
 // Without specification pattern 
@@ -69,9 +69,9 @@ public class PlayerService
 }
 ```
 You can see how quickly this either turns into a giant method doing a lot of things or you end up with a ton of small methods doing very similar things.
-Let's apply the specification pattern to this.
+Let's get dirty and apply the specification pattern to this.
 ## The Practical
-We start by creating an abstract `Specification` class and creating two methods `ToExpression()` and `IsSatisfiedBy(T entity)`
+We can start by creating an abstract `Specification<T>` class and creating two methods `ToExpression()` and `IsSatisfiedBy(T entity)`
 
 ```
 public abstract class Specification<T>
@@ -88,7 +88,7 @@ public abstract class Specification<T>
 
 `ToExpression()` returns an `Expression` which is of our entity type and promises to return a `bool`. It is incredibly powerful when combined with LINQ as I'll demonstrate later.
 
-`IsSatisfiedBy(T entity)` returns a `bool` outright and can also be used in LINQ _or_ to evaluate a single entity. It is chaining off of our `ToExpression()` method, compiling it, and then passing in the entity to the expression to determine whether it satisfies the expression.
+`IsSatisfiedBy(T entity)` returns a `bool` outright and can also be used in LINQ _or_ to evaluate a single entity. It is chaining off of our `ToExpression()` method, compiling it, and then passing in the entity to the expression to determine whether the entity satisfies the expression.
 
 Here's my `Player` entity from the Yahoo Fantasy Sports API which we will apply a specification for.
 
@@ -104,7 +104,7 @@ public class Player
 }
 ```
 
-And the specification - we want to compare if the player has a contract for the 2020 year.
+And for the specification we want to compare if the player has a contract for the 2020 year.
 
 ```
 public class Has2020YearContractSpecification : Specification<Player>
@@ -145,8 +145,8 @@ public class HasGivenYearContractSpecification : Specification<Player>
 }
 ```
 
-Let's jump back to our original `GetAll()` method now inside the `PlayerService` and apply the specification.
-We will replace our original one note parameters with a collection of filters of our `Specification<Player>` type.
+Let's jump back to our original `GetAll()` method that is inside the `PlayerService` and apply the specification.
+We will replace our original one-note parameters with a collection of filters of our `Specification<Player>` type.
 
 ```
 public class PlayerService
@@ -182,7 +182,7 @@ var filters = new List<Specification<Player>>()
 _playerService.GetAll(filters)
 ```
 
-`GetAll()` will remain unchanged going forward. New domain needs are just passed as different filters and the method will iterate each one, evaluate it, and return the filtered collection.
+The hug benefit is that `GetAll()` will remain unchanged going forward, as _n_-number of specifications are added. New domain needs are just passed as different filters and the method will iterate each one, evaluate it, and return the filtered collection.
 This can be reduced in number of lines (if you prefer) by doing the following:
 
 ```
@@ -192,9 +192,9 @@ if (filters != null)
 }
 ```
 
-I generally find this harder to read but that's my current opinion as of writing this.
+I generally find this harder to read but use it if you feel so inclined.
 
-Let's say you want to make this even more DRY by sharing the bit of code that iterates and actually applies to expression to the entity. We can make a static class (extension) for such a thing.
+Let's say you want to make this even more DRY by sharing the bit of code that iterates and actually applies the expression to the entity. We can make a static class with a static extension for such a thing.
 
 ```
 public static class DbContextExtensions
@@ -223,13 +223,23 @@ public IEnumerable<Player> GetAll(IEnumerable<Specification<Player>> filters)
 
 How concise is that? For double the points, `.ApplyFilters()` can be used on any entity, not just `Player`.
 
-You can use the `IsSatisfiedBy()` method simply by doing the following.
+Jumping back to our other method on our abstract `Specification` class, suppose you already have an entity and you want to see if it conforms to a specification. You can use the `IsSatisfiedBy()` method simply by doing the following.
 
 ```
-var player = _playerService.GetPlayer();
+var player = _playerService.GetAnyPlayer();
 var has2020Contract = new HasGivenYearContractSpecification(2020).IsSatisfiedBy(player);
 ```
-or if you have multiple you can compare each individually or add another extension method
+You can also use this with navigational/relational properties.
+
+```
+var team = _teamService_.GetAnyTeam();
+team.Players.Where(p => new HasGivenYearContractSpecification(2020).IsSatisfiedBy(p))
+// Or
+team.Players.Where(p => new HasGivenYearContractSpecification(2020).IsSatisfiedBy)
+// Or use ToExpression() / ApplyFilters()...
+```
+
+or if you have multiple specifications you can compare each individually or add another extension method
 ```
 public static bool SatifiesFilters<T>(this T entity, IEnumerable<Specification<T>> filters = null)
 {
@@ -248,7 +258,18 @@ public static bool SatifiesFilters<T>(this T entity, IEnumerable<Specification<T
     return true;
 }
 ```
+Which looks like
+```
+var player = _playerService.GetAnyPlayer();
+var filters = new List<Specification<Player>>() 
+{ 
+    new HasGivenYearContractSpecification(2020),
+    new IsQuarterBackSpecification()
+};
 
+var is2020Quarterback = player.SatisfiesFilters(filters);
+
+```
 ## Some Notes
 _Entity Framework Core_ will reduce the noise of chaining `.Where()` when it translates via _LINQ-to-Entities_. You can find out more about how this and their scrubbing process in general works by watching [this great video from the Dotnetos 2019 Conference](https://m.youtube.com/watch?v=r69ZxXgOIK4)
 
