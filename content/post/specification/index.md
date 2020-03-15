@@ -182,7 +182,7 @@ var filters = new List<Specification<Player>>()
 _playerService.GetAll(filters)
 ```
 
-The hug benefit is that `GetAll()` will remain unchanged going forward, as _n_-number of specifications are added. New domain needs are just passed as different filters and the method will iterate each one, evaluate it, and return the filtered collection.
+The huge benefit is that `GetAll()` will remain unchanged going forward, as _n_-number of specifications are added. New domain needs are just passed as different filters and the method will iterate each one, evaluate it, and return the filtered collection.
 This can be reduced in number of lines (if you prefer) by doing the following:
 
 ```
