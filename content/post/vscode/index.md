@@ -55,7 +55,7 @@ In no particular order, VS Code _**must**_:
 - Support Git actions through a GUI.
 - NuGet lookup.
 - Some level of code cleanup/formatting.
-- Easily export my settings
+- Easily export my settings for use on other computers.
 
 I'm happy to report I got all of these things, some with tears and confusion, but some as easy as clicking "Install Extension". I also got quite a few really awesome add-ons that I didn't even know I wanted.
 
@@ -90,7 +90,7 @@ I'm going to just barf out a list of extensions and how they enhance my work. A 
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
   - Another "I didn't know I wanted it until I saw it then I absolutely had to have it". Adds really nice formatting to comments of different syntax. 
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
-  - Software engineering? Pretty smart. General Relativity? Pretty freakin' smart. The dude/dudette who thought this up? _A B S O L U T E_ FREAKING UNIT. Download this. _NOW_. It colors each nested set of brackets, parentheses, or square brackets a different color. Where have you been all my life?
+  - Software engineering? Pretty smart. General Relativity? Pretty freakin' smart. The dude/dudette who thought this up? FREAKING _G E N I U S_. Download this. _NOW_. It colors each nested set of brackets, parentheses, or square brackets a different color. Where have you been all my life?
 - [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) :white_check_mark:
   - Syntax highlighting, intellisense, general editing support for C#. Besides my mind being blown about Bracket Pair Colorizer, this is the most important extension in here.
 - [C# Extensions](https://marketplace.visualstudio.com/items?itemName=kreativ-software.csharpextensions) 
@@ -153,7 +153,7 @@ I'm going to just barf out a list of extensions and how they enhance my work. A 
 - [NuGet Reverse Package Search](https://marketplace.visualstudio.com/items?itemName=jesschadwick.nuget-reverse-package-search)
   - Reverse lookup on classes to NuGet packages. I've found this incredibly helpful for Microsoft namespaces especially as they have lots of packages underneath `Microsoft.Extensions.DependencyInjection`.
 - [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
-  - Allows you to quickly convert JSON to another language type (I suggest C# :) )
+  - Allows you to quickly convert JSON to another language type (I suggest C# :smirk:)
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) :white_check_mark:
   - Allows you to sync settings to the cloud for multiple environments. This was a big reason my first attempt at this failed. _Note:_ Microsoft is working on bringing this feature in-house so this will likely be unneeded in the coming weeks.
 - [SQL Server (mssql)](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) :white_check_mark:
