@@ -59,7 +59,7 @@ In no particular order, VS Code _**must**_:
 
 I'm happy to report I got all of these things, some with tears and confusion, but some as easy as clicking "Install Extension". I also got quite a few really awesome add-ons that I didn't even know I wanted.
 
-All in all it took me about 12 hours of configuring VS Code through, some trial-and-error with existing projects, and switching between Visual Studio and Code to really examine how I was actually writing code.
+All in all it took me about 12 hours of configuring VS Code, some trial-and-error with existing projects, and switching between Visual Studio and Code to really examine how I was actually writing code.
 
 ## The Practical
 
