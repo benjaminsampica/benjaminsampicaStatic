@@ -5,7 +5,7 @@ summary: 'Replacing Visual Studio with Visual Studio Code for ASP.NET Core MVC d
 authors:
 - ben-sampica
 categories:
-- CSharp
+- ASP.NET Core, CSharp
 date: "2020-03-31T00:00:00Z"
 featured: false
 draft: false
@@ -52,7 +52,7 @@ In no particular order, VS Code _**must**_:
 - Support multi-project applications with easy context switching between them.
 - MVC (JS, C#, Razor, etc.) Intellisense w/ code refactoring.
 - Support Git actions through a GUI.
-- Nuget lookup.
+- NuGet lookup.
 - Some level of code cleanup/formatting.
 - Easily export my settings
 
@@ -87,7 +87,7 @@ I'm going to just barf out a list of extensions and how they enhance my work. A 
 - [Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
   - For use with tracking commits & work items on Azure DevOps.
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-  - Another "I didn't know I wanted it until I saw it then I absolutely had to have it".Adds really nice formatting to comments of different syntax. 
+  - Another "I didn't know I wanted it until I saw it then I absolutely had to have it". Adds really nice formatting to comments of different syntax. 
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
   - Software engineering? Pretty smart. General Relativity? Pretty freakin' smart. The dude/dudette who thought this up? _A B S O L U T E_ FREAKING UNIT. Download this. _NOW_. It colors each nested set of brackets, parentheses, or square brackets a different color. Where have you been all my life?
 - [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) :white_check_mark:
