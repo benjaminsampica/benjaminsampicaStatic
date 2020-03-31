@@ -5,7 +5,8 @@ summary: 'Replacing Visual Studio with Visual Studio Code for ASP.NET Core MVC d
 authors:
 - ben-sampica
 categories:
-- ASP.NET Core, CSharp
+- ASP.NET Core
+- CSharp
 date: "2020-03-31T00:00:00Z"
 featured: false
 draft: false
