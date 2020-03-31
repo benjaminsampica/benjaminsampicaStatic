@@ -35,7 +35,7 @@ projects: []
 ## Introduction
 A post a couple weeks ago on Reddit in the r/dotnet subreddit caught my eye and the user asked about developing .NET Core applications inside of Visual Studio Code. Having piqued my interest about a year ago, I tried (and failed) the task of doing so then - my understanding of the dotnet CLI was too narrow, VS Code was brand new to me at the time, and the barrier to entry was too high with a huge swath of extensions. I just wanted to _write code_ damnit, not mess with a bunch of meta-programming features that Visual Studio already provided!
 
-So here I am a year later, trying the same thing, and am happy to report mostly success this time.
+So here I am a year later, trying the same thing, and am happy to report some hard-bought success this time.
 
 ## The Theoretical
 
