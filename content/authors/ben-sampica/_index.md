@@ -25,6 +25,7 @@ interests:
 - DevOps
 - Reading
 - Computer Hardware
+- Dungeons and Dragons
 - Family
 
 education:
