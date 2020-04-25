@@ -75,7 +75,7 @@ public class LessTransform : IBundleTransform
 }
 ```
 
-This simply isn't working at all as the browser is picking up a `.less` file when inspecting the downloaded browser files. When I went digging, I went and looked at a few sites that I had worked on that I _knew_ worked. I found this same method but the implementation was different of StackOverflow by someone at our organization and put to use. So was the one above - no shame in that - but understanding what it's doing (and it's pitfalls) is part of the process of shared code.
+This simply isn't working at all as the browser is picking up a `.less` file when inspecting the downloaded browser files. When I went digging, I went and looked at a few sites that I had worked on that I _knew_ worked. I found this same method but the implementation was different. Both were pulled off of StackOverflow by someone at our organization and put to use. There's no shame in that - but understanding what it's doing (and it's pitfalls) is part of the process of shared code.
 
 ```
 public void Process(BundleContext context, BundleResponse bundle)
