@@ -144,7 +144,7 @@ Boom! It works.
 
 Yeah, yeah. It still looks _really_ bad. Bootstrap 3 is long in the tooth at this point and this still was a very unfortunate use of the framework. A UI update is long overdue - but this application will hopefully disappear when the department that uses it upgrades the application that this just wraps around anyway.
 
-All-in-all this took about two entire days of my time to get to the root of. So much for an in-and-out job... :sob:.  Lesson learned - **_HARD_**.
+All-in-all this took about two entire days of my time to get to the root of. So much for an in-and-out job :sob:.  Lesson learned - **_HARD_**. Now to actually do the _original work_...
 
 ## Some Notes
 
