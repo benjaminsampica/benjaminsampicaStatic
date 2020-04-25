@@ -49,7 +49,7 @@ Except for some reason the site stylesheets aren't loading...
 
 The site, while functional, is all but unusable and doesn't conform anywhere near our branding standards. But it works fine in our hosted dev/qa/production site? Why not locally? Here's what it looks like:
 
-{{ < figure src="images/bad.PNG" title="Bad" lightbox="true" > }}
+{{< figure src="images/bad.PNG" title="Bad" lightbox="true" >}}
 
 I do some digging and find out the following facts:
 
@@ -132,17 +132,19 @@ Oof. Just by seeing this I know what it means. I have to mess with the `web.conf
 I had to add
 
 ```
-	  <handlers>
-		  <add name="dotless" path="*.less" verb="GET" type="dotless.Core.LessCssHttpHandler,dotless.Core" resourceType="File" preCondition="" />
-	  </handlers>
+<handlers>
+  <add name="dotless" path="*.less" verb="GET" type="dotless.Core.LessCssHttpHandler,dotless.Core" resourceType="File" preCondition="" />
+</handlers>
 ```
 under the `<system.webServer>` property and...
 
 Boom! It works.
 
-{{ < figure src="images/bad.PNG" title="Good" lightbox="true" > }}
+{{< figure src="images/good.PNG" title="Good" lightbox="true" >}}
 
 Yeah, yeah. It still looks _really_ bad. Bootstrap 3 is long in the tooth at this point and this still was a very unfortunate use of the framework. A UI update is long overdue - but this application will hopefully disappear when the department that uses it upgrades the application that this just wraps around anyway.
+
+All-in-all this took about two entire days of my time to get to the root of. So much for an in-and-out job... :sob:.  Lesson learned - **_HARD_**.
 
 ## Some Notes
 
