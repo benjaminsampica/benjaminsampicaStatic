@@ -9,7 +9,7 @@ categories:
 date: "2020-03-14T00:00:00Z"
 featured: false
 draft: false
-toc: true 
+toc: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -32,7 +32,7 @@ projects: []
 {{% toc %}}
 
 ## Introduction
-I've recently been helping some good friends of mine create a fantasy football wrapper around the [Yahoo Fantasy Sports API](https://developer.yahoo.com/fantasysports/guide/). The overall Yahoo experience has been a mixed bag, but I got the 
+I've recently been helping some good friends of mine create a fantasy football wrapper around the [Yahoo Fantasy Sports API](https://developer.yahoo.com/fantasysports/guide/). The overall Yahoo experience has been a mixed bag, but I got the
 opportunity to practice a pattern that I haven't often put into much use as of yet.
 
 ## The Theoretical
@@ -45,7 +45,7 @@ By keeping it separate, we can chain business rules together and reuse them so a
 You can take this pattern and do some very powerful things with it. I've found myself writing methods extracting data from a repository but ultimately there was little difference between methods. I've also found myself doing the same but having _god_ methods. Consider the following:
 
 ```
-// Without specification pattern 
+// Without specification pattern
 public class PlayerService
 {
     private readonly IDbContext _dbContext;
@@ -60,7 +60,7 @@ public class PlayerService
       int? contractLength = null,
       string position = null)
     {
-        return _dbContext.Players.Where(p => 
+        return _dbContext.Players.Where(p =>
             (fantasyTeam == null || p.FantasyTeam == fantasyTeam)
             && (contractLength == null || p.ContractLength >= contractLength)
             && (position == null || p.Position == position)
@@ -109,13 +109,6 @@ And for the specification we want to compare if the player has a contract for th
 ```
 public class Has2020YearContractSpecification : Specification<Player>
 {
-    private readonly int _year;
-
-    public HasGivenYearContractSpecification(int year)
-    {
-        _year = year;
-    }
-
     public override Expression<Func<Player, bool>> ToExpression()
     {
         return player => player.ContractLength == 2020;
@@ -123,7 +116,7 @@ public class Has2020YearContractSpecification : Specification<Player>
 }
 ```
 
-You can see I've inherited the `Specification` class on my `HasCurrentYearContractSpecification` class which has a type of `Player`. 
+You can see I've inherited the `Specification` class on my `Has2020YearContractSpecification` class which has a type of `Player`.
 Our `ToExpression()` method is evaluating whether the ContractLength is greater than or equal to 2020.
 
 But what if you want to pass in the year? Easy - use the constructor!
@@ -137,7 +130,7 @@ public class HasGivenYearContractSpecification : Specification<Player>
     {
         _year = year;
     }
-    
+
     public override Expression<Func<Player, bool>> ToExpression() => player => player.ContractLength >= _year;
 }
 ```
@@ -172,8 +165,8 @@ public class PlayerService
 ```
 ```
 // Some other method calling this...
-var filters = new List<Specification<Player>>() 
-{ 
+var filters = new List<Specification<Player>>()
+{
     new HasGivenYearContractSpecification(2020)
 };
 _playerService.GetAll(filters)
@@ -211,10 +204,10 @@ public static class DbContextExtensions
 }
 ```
 
-Now going back to our `GetAll()` method 
+Now going back to our `GetAll()` method
 
 ```
-public IEnumerable<Player> GetAll(IEnumerable<Specification<Player>> filters) 
+public IEnumerable<Player> GetAll(IEnumerable<Specification<Player>> filters)
     => _dbContext.Players.ApplyFilters(filters)
 ```
 
@@ -258,8 +251,8 @@ public static bool SatisfiesFilters<T>(this T entity, IEnumerable<Specification<
 Which looks like
 ```
 var player = _playerService.GetAnyPlayer();
-var filters = new List<Specification<Player>>() 
-{ 
+var filters = new List<Specification<Player>>()
+{
     new HasGivenYearContractSpecification(2020),
     new IsQuarterBackSpecification()
 };

@@ -5,9 +5,9 @@ summary: 'A blast to the past with MVC5 and poorly maintained code'
 authors:
 - ben-sampica
 categories:
-- ASP.NET Core
+- ASP.NET MVC 5
 - CSharp
-date: "2020-03-31T00:00:00Z"
+date: "2020-04-24T00:00:00Z"
 featured: false
 draft: false
 toc: true
