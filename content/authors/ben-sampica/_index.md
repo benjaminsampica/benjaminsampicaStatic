@@ -70,3 +70,6 @@ My first experience with computers was watching my oldest brother rig up a baud 
 The resulting thousand-dollar internet bill and my parents anger at my brother taught me nothing - I've been hooked on computers ever since.
 
 I currently work as a Web Application Developer for Polk County in Des Moines and have been since 2016. I utilize the .NET stack to create web applications that help Polk County better serve its residents.
+
+Outside of work I have a wonderful wife and a daughter, of whom I love very much. My wife is a superhero in that she still loves me even
+though I'm known to be a Dungeon Master for Dungeons & Dragons campaigns and puts up with me taking an entire bookshelf (literally) of Warhammer 40k literature.
