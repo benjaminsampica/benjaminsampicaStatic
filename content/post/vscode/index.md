@@ -10,7 +10,7 @@ categories:
 date: "2020-03-31T00:00:00Z"
 featured: false
 draft: false
-toc: true 
+toc: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -76,24 +76,24 @@ I'm going to just barf out a list of extensions and how they enhance my work. A 
 - [ASP.NET Core Switcher](https://marketplace.visualstudio.com/items?itemName=adrianwilczynski.asp-net-core-switcher)
   - Use a keybind to switch between a View and a Controller. Handy!
 - [ASP.NET Helper](https://marketplace.visualstudio.com/items?itemName=schneiderpat.aspnet-helper) :white_check_mark:
-  - Razor Intellisense 
+  - Razor Intellisense
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag) :white_check_mark:
   - Auto-rename and auto-close `html` tags.
 - [Auto-Using for C#](https://marketplace.visualstudio.com/items?itemName=Fudge.auto-using)
   - Automatically pulls in references to known .NET libraries. I like this a lot but wish it could detect my own project libraries too.
 - [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
-  - Another stretch goal. Authenticates with Azure services. Used with the below Pipelines and Repos (since I use Azure DevOps inside and outside of work). 
+  - Another stretch goal. Authenticates with Azure services. Used with the below Pipelines and Repos (since I use Azure DevOps inside and outside of work).
 - [Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
   - For use with CI/CD pipelines on Azure DevOps.
 - [Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
   - For use with tracking commits & work items on Azure DevOps.
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-  - Another "I didn't know I wanted it until I saw it then I absolutely had to have it". Adds really nice formatting to comments of different syntax. 
+  - Another "I didn't know I wanted it until I saw it then I absolutely had to have it". Adds really nice formatting to comments of different syntax.
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
   - Software engineering? Pretty smart. General Relativity? Pretty freakin' smart. The dude/dudette who thought this up? FREAKING _G E N I U S_. Download this. _NOW_. It colors each nested set of brackets, parentheses, or square brackets a different color. Where have you been all my life?
 - [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) :white_check_mark:
   - Syntax highlighting, intellisense, general editing support for C#. Besides my mind being blown about Bracket Pair Colorizer, this is the most important extension in here.
-- [C# Extensions](https://marketplace.visualstudio.com/items?itemName=kreativ-software.csharpextensions) 
+- [C# Extensions](https://marketplace.visualstudio.com/items?itemName=kreativ-software.csharpextensions)
   - Allows quickly adding C# classes, interfaces, or initializing constructors. There's a few `C# Extensions` packages floating around and the only one actively developed is the one I linked above. Not part of my _needs_ but a very nice to have.
 - [C# FixFormat](https://marketplace.visualstudio.com/items?itemName=Leopotam.csharpfixformat) :white_check_mark:
   - Adds some nice auto-formatting stuff like sorting usings, adding/subtracting indents, and cleaning up empty lines. Suplexes your code into submission.
@@ -107,7 +107,7 @@ I'm going to just barf out a list of extensions and how they enhance my work. A 
   - Gives a nice Command Palette task for dotnet commands. I pretty much only use this for Entity Framework migrations and even then it's maybe once a day. Still a nice small time-saver.
 - [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
   - A theme for VS Code that reminds me of Miami Vice. I'm a sucker for 80s vice. I did have to tweak some of the colors through VSCode's `settings.json` to my liking, which are below. `edit.tokenColorCustomizations` is at the root level.
-   ```     
+   ```
    "editor.tokenColorCustomizations": {
         "[Dracula]": {
             "keywords": "#c64bff",
@@ -125,7 +125,7 @@ I'm going to just barf out a list of extensions and how they enhance my work. A 
                     }
                 }
             ]
-        }     
+        }
     }
     ```
 - [Essential ASP.NET Core 3 Snippets](https://marketplace.visualstudio.com/items?itemName=doggy8088.netcore-snippets)
