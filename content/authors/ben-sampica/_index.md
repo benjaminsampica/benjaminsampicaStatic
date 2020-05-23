@@ -18,7 +18,7 @@ organizations:
   url: "https://www.polkcountyiowa.gov"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I'm a web developer who focuses mostly in the ASP.NET Core sphere. When not playing hard I enjoy reading, building computers, and spending time with my family. 
+bio: I'm a web developer who focuses mostly in the ASP.NET Core sphere. When not playing hard I enjoy reading, building computers, and spending time with my family.
 
 interests:
 - Web Development
@@ -26,6 +26,7 @@ interests:
 - Reading
 - Computer Hardware
 - Dungeons and Dragons
+- Warhammer 40k
 - Family
 
 education:
@@ -69,4 +70,3 @@ My first experience with computers was watching my oldest brother rig up a baud 
 The resulting thousand-dollar internet bill and my parents anger at my brother taught me nothing - I've been hooked on computers ever since.
 
 I currently work as a Web Application Developer for Polk County in Des Moines and have been since 2016. I utilize the .NET stack to create web applications that help Polk County better serve its residents.
-
