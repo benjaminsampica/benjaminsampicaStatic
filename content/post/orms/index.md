@@ -32,7 +32,7 @@ projects: []
 {{% toc %}}
 
 ## Introduction
-At my current position, we use Entity Framework Core every single day. I've seen questions on StackOverflow on this topic and had the conversation a surprising number times in different places I've worked over what life without an ORM (object-relational mapper), using traditional ADO.NET and SQL scripts, looks like, compared to using an ORM. In this case, I've leaned heavily on Entity Framework but also included Dapper. Is it worth the setup, security, and, most importantly, does it ~~blend~~ scale?
+At my current position, we use Entity Framework Core every single day. I've seen questions on StackOverflow on this topic and had the conversation a surprising number times in different places I've worked over what life without an ORM (object-relational mapper), using traditional ADO.NET and SQL scripts, looks like, compared to using an ORM. In this post, I've leaned heavily on Entity Framework but also included Dapper to showcase the difference. Is it worth the setup, security, and, most importantly, does it ~~blend~~ scale?
 
 ## The Theoretical
 
@@ -40,7 +40,7 @@ At my current position, we use Entity Framework Core every single day. I've seen
 
 Microsoft has a comprehensive list of security considerations for EF [here](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/security-considerations). Below is a few of things that organizations will need to consider to do to safely use Dapper or EF.
 
-### ORM Usage
+#### ORM Usage
 - Prevent SQL Injection from external user input by avoiding raw-SQL query string building. Both Dapper and Entity Framework provide methods to build parameterized queries as well as passing sanitized parameters to stored procedures and those should be favored except in the most rare and controlled cases.
 - Avoid very large result sets. A large result set that selects 5 million joined records into memory can cause the application/system to crash. Only query for what is needed by the application.
 - (EF Only) - Service accounts need `[db_datareader]` `[db_datawriter]` and `[db_ddladmin]` permission applied on the database.
@@ -49,10 +49,10 @@ Microsoft has a comprehensive list of security considerations for EF [here](http
 
 Building and maintaining performant, robust, and scaleable enterprise applications is the point of ORM's. [Here is a live example of a relational database implementation using Entity Framework that has over 100,000 records and a SQL response time averaging <10ms](http://efcoreinaction.com/). Be sure to check out the log for the queries being generated and the speeds.
 
-### Materializing
+#### Materializing
 Understanding materialization is a vital part of using an ORM. Writing the query to materialize the fewest objects possible is key to maintaining performant applications. In EF and Dapper, there are common C# expressions that will materialize a query into memory. With both there are a few unique ways of doing so, as well as some constraints that will auto-materialize without an explicit call.
 
-### Generated SQL (EF Only)
+#### Generated SQL (EF Only)
 
 Entity Framework specifically writes a SQL language called Entities SQL (EF 6+ & EF Core) which is then converted to the targeted data source SQL (MSSQL, MYSQL, etc.). This makes the application layer portable to any type of database without any application changes, but also requires some thought when creating queries for more complex objects as it is easier to stand up queries that have latent performance issues.
 
