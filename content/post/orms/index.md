@@ -32,13 +32,13 @@ projects: []
 {{% toc %}}
 
 ## Introduction
-At my current position, we use Entity Framework Core every single day. I've had a conversation a surprising number times over what level of abstraction ORM's provide versus life without an ORM (object-relational mapper) and using traditional ADO.NET. Is it worth the setup, security, and, most importantly, does it ~~blend~~ scale?
+At my current position, we use Entity Framework Core every single day. I've seen questions on StackOverflow on this topic and had the conversation a surprising number times in different places I've worked over what life without an ORM (object-relational mapper), using traditional ADO.NET and SQL scripts, looks like, compared to using an ORM. In this case, I've leaned heavily on Entity Framework but also included Dapper. Is it worth the setup, security, and, most importantly, does it ~~blend~~ scale?
 
 ## The Theoretical
 
 ### Security Considerations
 
-Microsoft has a comprehensive list of security considerations for EF [here](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/security-considerations). Below is a summary of things that Casey's will need to begin and continue to do to safely use Dapper or EF.
+Microsoft has a comprehensive list of security considerations for EF [here](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/security-considerations). Below is a few of things that organizations will need to consider to do to safely use Dapper or EF.
 
 ### ORM Usage
 - Prevent SQL Injection from external user input by avoiding raw-SQL query string building. Both Dapper and Entity Framework provide methods to build parameterized queries as well as passing sanitized parameters to stored procedures and those should be favored except in the most rare and controlled cases.
@@ -58,7 +58,7 @@ Entity Framework specifically writes a SQL language called Entities SQL (EF 6+ &
 
 ## The Practical
 
-With the security and performance considerations in mind, below are a few categories with examples where ORM's really shine and where Casey's has the opportunity to enhance the application development life cycle.
+With the security and performance considerations in mind, below are a few categories with examples where ORM's really shine and where the application development life cycle is improved.
 
 Consider an application which maintains employees. The application connects to a database with tables called `dbo.Employee` and `domain.EmployeeType` with the following properties:
 
