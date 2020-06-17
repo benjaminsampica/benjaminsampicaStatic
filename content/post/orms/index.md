@@ -1,7 +1,7 @@
 ---
-title: 'ADO.NET vs ORM's (Dapper & EF)'
-subtitle: 'The case for ORM's'
-summary: 'A case for ORM's compared to traditional ADO.NET and/or raw SQL scripts.'
+title: 'ADO.NET vs an ORM (Dapper & EF)'
+subtitle: 'The case for using an ORM'
+summary: 'A case for an ORM compared to traditional ADO.NET and/or raw SQL scripts.'
 authors:
 - ben-sampica
 categories:
@@ -31,29 +31,32 @@ projects: []
 
 {{% toc %}}
 
-# The Theoretical
+## Introduction
+At my current position, we use Entity Framework Core every single day. I've had a conversation a surprising number times over what level of abstraction ORM's provide versus life without an ORM (object-relational mapper) and using traditional ADO.NET. Is it worth the setup, security, and, most importantly, does it ~~blend~~ scale?
 
-## Security Considerations
+## The Theoretical
+
+### Security Considerations
 
 Microsoft has a comprehensive list of security considerations for EF [here](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/security-considerations). Below is a summary of things that Casey's will need to begin and continue to do to safely use Dapper or EF.
 
-## ORM Usage
+### ORM Usage
 - Prevent SQL Injection from external user input by avoiding raw-SQL query string building. Both Dapper and Entity Framework provide methods to build parameterized queries as well as passing sanitized parameters to stored procedures and those should be favored except in the most rare and controlled cases.
 - Avoid very large result sets. A large result set that selects 5 million joined records into memory can cause the application/system to crash. Only query for what is needed by the application.
 - (EF Only) - Service accounts need `[db_datareader]` `[db_datawriter]` and `[db_ddladmin]` permission applied on the database.
 
-## Performance Considerations
+### Performance Considerations
 
 Building and maintaining performant, robust, and scaleable enterprise applications is the point of ORM's. [Here is a live example of a relational database implementation using Entity Framework that has over 100,000 records and a SQL response time averaging <10ms](http://efcoreinaction.com/). Be sure to check out the log for the queries being generated and the speeds.
 
-## Materializing
+### Materializing
 Understanding materialization is a vital part of using an ORM. Writing the query to materialize the fewest objects possible is key to maintaining performant applications. In EF and Dapper, there are common C# expressions that will materialize a query into memory. With both there are a few unique ways of doing so, as well as some constraints that will auto-materialize without an explicit call.
 
-## Generated SQL (EF Only)
+### Generated SQL (EF Only)
 
 Entity Framework specifically writes a SQL language called Entities SQL (EF 6+ & EF Core) which is then converted to the targeted data source SQL (MSSQL, MYSQL, etc.). This makes the application layer portable to any type of database without any application changes, but also requires some thought when creating queries for more complex objects as it is easier to stand up queries that have latent performance issues.
 
-# The Practical
+## The Practical
 
 With the security and performance considerations in mind, below are a few categories with examples where ORM's really shine and where Casey's has the opportunity to enhance the application development life cycle.
 
@@ -66,13 +69,13 @@ Consider an application which maintains employees. The application connects to a
 |`Name` (nvarchar)          |`Active` (bit)             |
 |`Active` (bit)             |                           |
 
-## Speeding Up New Development
+### Speeding Up New Development
 
 Reduction in the amount of time it takes to stand up new queries as well as continuously add new database tables and their associated application models is one of the greatest benefits of an ORM.
 
-### Comparison: Select all columns from all employees
+#### Comparison: Select all columns from all employees
 
-#### ORM (Entity Framework)
+##### ORM (Entity Framework)
 
 ```csharp
 public IEnumerable<Employee> GetEmployees()
@@ -81,7 +84,7 @@ public IEnumerable<Employee> GetEmployees()
 }
 ```
 
-#### ORM (Dapper)
+##### ORM (Dapper)
 ```csharp
 public IEnumerable<Employee> GetEmployees()
 {
@@ -101,7 +104,7 @@ public IEnumerable<Employee> GetEmployees()
 }
 ```
 
-#### ADO.NET
+##### ADO.NET
 
 SQL Script
 ```sql
@@ -184,7 +187,7 @@ public Tuple<IEnumerable<Employee>, int> GetEmployeeByTypeAndStatus(int employee
 
 Imagine the difference in work required if these queries existed and then Employees received a new column (and the possibility of a mistake being made).
 
-#### Maintenance Reduction
+##### Maintenance Reduction
 
 In our previous example, our current architecture file is reading an unbound array by index and is extremely brittle to new changes. What if the column type is changed? What if the stored procedure appends new columns inside of it and messes up the indexes? Also, every single stored procedure that interacts with the `dbo.Employee` table and needs the new information also needs to be updated.
 
@@ -205,7 +208,7 @@ Imagine there are a bunch of similar queries requiring employee information - an
 
 There's also something to be said for a reduction of bugs. With a coupled relationship between the database and application through strongly-typed models, there are no accidents that are caused from index, column type mismatching, or stored procedure result set mismatching. The change impact is lessened by less files being modified and less opportunities for error.
 
-#### EF Only
+##### EF Only
 
 Global query filtering act as a 'middleware' query which append onto the executing query. Consider our employee and employee type tables above that allows for soft-deleting of entities. Global query filters can append a `.Where(employee => employee.IsActive)` onto every query that can be overriden where needed. This both reduces maintenance by preventing developer mistakes and speeds up development.
 
@@ -233,7 +236,7 @@ public class Name {
 
 The `Name` class is reused in both `Employee` and `ExternalNewsletterSubscriber` and the `Name` properties will be mapped to their proper owner tables in the database. Read more about this [here](https://docs.microsoft.com/en-us/ef/core/modeling/owned-entities).
 
-#### Integration Testing
+##### Integration Testing
 
 EF provides in-memory database functionality that makes writing integration tests against complicated business logic as easy as possible. Traditionally, when a database is needed for testing it is built by hand in an SSDT project. EF's in-memory databases allows each integration test to have their own atomic database while the test runs - seamlessly working with existing application code with no mocking or existing data required.
 
@@ -266,11 +269,11 @@ public class IntegrationTests
 
 Dapper can easily be combined with mocking frameworks like Moq and/or utilizing light databases like SQLLite or SSDT projects.
 
-# Some Notes
+## Some Notes
 
 When security and performance are kept in mind, both Entity Framework and Dapper provide huge opportunities to improve the application development life cycle. By speeding up new development, reduction of maintenance and bugfix times, and offering robust integration testing, ORM's should be heavily considered in the application lifecycle for existing and new development.
 
-# Additional Resources
+## Additional Resources
 
 - [Entity Framework Tutorial](https://www.entityframeworktutorial.net/what-is-entityframework.aspx)
 - [Entity Framework Documentation](https://docs.microsoft.com/en-us/ef/)
