@@ -65,7 +65,7 @@ Consider an application which maintains employees. The application connects to a
 |**dbo.Employee**           |**domain.EmployeeType**   |
 |---------------------------|---------------------------|
 |`EmployeeId` (int) [PK]    |`EmployeeTypeId` (int) [PK]|
-|`EmployeeTypeId` (bit) [FK]|`Value` [nvarchar]         |
+|`EmployeeTypeId` (int) [FK]|`Value` [nvarchar]         |
 |`Name` (nvarchar)          |`Active` (bit)             |
 |`Active` (bit)             |                           |
 
