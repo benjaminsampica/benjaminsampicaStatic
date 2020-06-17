@@ -73,9 +73,9 @@ Consider an application which maintains employees. The application connects to a
 
 Reduction in the amount of time it takes to stand up new queries as well as continuously add new database tables and their associated application models is one of the greatest benefits of an ORM.
 
-#### Comparison: Select all columns from all employees
+**Comparison: Select all columns from all employees**
 
-##### ORM (Entity Framework)
+*ORM (Entity Framework)*
 
 ```csharp
 public IEnumerable<Employee> GetEmployees()
@@ -84,7 +84,7 @@ public IEnumerable<Employee> GetEmployees()
 }
 ```
 
-##### ORM (Dapper)
+*ORM (Dapper)*
 ```csharp
 public IEnumerable<Employee> GetEmployees()
 {
@@ -104,7 +104,7 @@ public IEnumerable<Employee> GetEmployees()
 }
 ```
 
-##### ADO.NET
+*ADO.NET*
 
 SQL Script
 ```sql
@@ -187,7 +187,7 @@ public Tuple<IEnumerable<Employee>, int> GetEmployeeByTypeAndStatus(int employee
 
 Imagine the difference in work required if these queries existed and then Employees received a new column (and the possibility of a mistake being made).
 
-##### Maintenance Reduction
+### Maintenance Reduction
 
 In our previous example, our current architecture file is reading an unbound array by index and is extremely brittle to new changes. What if the column type is changed? What if the stored procedure appends new columns inside of it and messes up the indexes? Also, every single stored procedure that interacts with the `dbo.Employee` table and needs the new information also needs to be updated.
 
@@ -208,7 +208,7 @@ Imagine there are a bunch of similar queries requiring employee information - an
 
 There's also something to be said for a reduction of bugs. With a coupled relationship between the database and application through strongly-typed models, there are no accidents that are caused from index, column type mismatching, or stored procedure result set mismatching. The change impact is lessened by less files being modified and less opportunities for error.
 
-##### EF Only
+*EF Only*
 
 Global query filtering act as a 'middleware' query which append onto the executing query. Consider our employee and employee type tables above that allows for soft-deleting of entities. Global query filters can append a `.Where(employee => employee.IsActive)` onto every query that can be overriden where needed. This both reduces maintenance by preventing developer mistakes and speeds up development.
 
@@ -236,7 +236,7 @@ public class Name {
 
 The `Name` class is reused in both `Employee` and `ExternalNewsletterSubscriber` and the `Name` properties will be mapped to their proper owner tables in the database. Read more about this [here](https://docs.microsoft.com/en-us/ef/core/modeling/owned-entities).
 
-##### Integration Testing
+### Integration Testing
 
 EF provides in-memory database functionality that makes writing integration tests against complicated business logic as easy as possible. Traditionally, when a database is needed for testing it is built by hand in an SSDT project. EF's in-memory databases allows each integration test to have their own atomic database while the test runs - seamlessly working with existing application code with no mocking or existing data required.
 
