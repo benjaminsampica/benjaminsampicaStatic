@@ -92,7 +92,7 @@ public IEnumerable<Employee> GetEmployees()
 
     var sqlQuery = new StringBuilder("SELECT ")
         .AppendJoin(", ", employeeProperties)
-        .Append($" FROM [CS].[dbo].[{nameof(Employee)}]")
+        .Append($" FROM [dbo].[{nameof(Employee)}]")
         .ToString();
 
     using (var databaseConnection = new SqlConnection(_applicationOptions.ConnectionString))
