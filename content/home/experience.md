@@ -25,45 +25,28 @@ date_format = "Jan 2006"
   date_start = "2016-06-26"
   date_end = ""
   description = """
-  Responsibilities include -
-  * Full-stack web development
-  * Administrating our Azure DevOps environment 
-  * Being a change agent for both Agile & Scrum principles/values
-  * Mentoring and being contagiously positive to other developers
-  """
+I am ﬁrst a full-stack developer starting with gathering requirements/existing workﬂows through front-end implementation with client acceptance.
+
+On top of this I maintain the CI/CD functionality on our Azure DevOps organization and maintain a 'Pipelines' repository with our YAML ﬁles, which houses our different strategies for building, testing, and deploying our applications automatically.
+
+I work with team members in a collaborative and agile environment to craft the best software and provide the Polk County employees and residents the most value.
+"""
 
 [[experience]]
-  title = "IT Service Coordinator"
-  company = "The Members Group"
-  company_url = "https://www.co-opfs.org/"
-  location = "Urbandale"
-  date_start = "2016-01-01"
-  date_end = "2016-06-24"
+  title = "Software Engineer"
+  company = "Polk County"
+  company_url = "https://www.caseys.com"
+  location = "Ankeny"
+  date_start = "2019-03-26"
+  date_end = "2019-08-21"
   description = """
-  Responsibilities included - 
-  * Took Help Desk Support calls and logged tickets.
-  * Resolved Tier 1 - Tier 3 (Non-Application Development) tickets.
-  * Trained incoming Tier 1 employees on common issues and
-application-specific workflows.
-  """
+I created and led an API strategy for sun setting legacy applications that needed to continue to speak with each other. These were coupled with a few ASP.NET Core websites that were to replace legacy applications.
 
-[[experience]]
-  title = "IT Intern"
-  company = "Mercer"
-  company_url = "https://www.co-opfs.org/"
-  location = "Urbandale"
-  date_start = "2015-05-01"
-  date_end = "2015-08-24"
-  description = """
-  Responsibilities included - 
-  * Updated, created, and maintained company SharePoint sites.
-  * Led project to create a SharePoint consistency template among
-team sites.
-  * Created automation scripts with Selenium in Java for largescale automation testing.
-  * Wrote documentation for SharePoint from both a users and
-developers point of view.
-  * Updated VBA-based software to improve search accuracy and
-added in new systems.
+To deploy these applications, I utilized Azure DevOps for CI/CD for pull requests, merges, and deployment. 
+
+I also largely maintained and refactored legacy applications written in VB.NET, VBScript, and other more long-in-thetooth languages.
+Finally, I wrote a base web application for Casey's IT to jump start new development initiatives.
+
   """
 
 +++
