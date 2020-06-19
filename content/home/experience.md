@@ -22,7 +22,7 @@ date_format = "Jan 2006"
   company = "Polk County"
   company_url = "https://www.polkcountyiowa.gov"
   location = "Des Moines"
-  date_start = "2016-06-26"
+  date_start = "2019-08-21"
   date_end = ""
   description = """
 I am ﬁrst a full-stack developer starting with gathering requirements/existing workﬂows through front-end implementation with client acceptance.
@@ -34,10 +34,10 @@ I work with team members in a collaborative and agile environment to craft the b
 
 [[experience]]
   title = "Software Engineer"
-  company = "Polk County"
+  company = "Casey's General Stores"
   company_url = "https://www.caseys.com"
   location = "Ankeny"
-  date_start = "2019-03-26"
+  date_start = "2019-03-16"
   date_end = "2019-08-21"
   description = """
 I created and led an API strategy for sun setting legacy applications that needed to continue to speak with each other. These were coupled with a few ASP.NET Core websites that were to replace legacy applications.
@@ -48,5 +48,15 @@ I also largely maintained and refactored legacy applications written in VB.NET, 
 Finally, I wrote a base web application for Casey's IT to jump start new development initiatives.
 
   """
+[[experience]]
+  title = "Associate Web Developer"
+  company = "Polk County"
+  company_url = "https://www.polkcountyiowa.gov"
+  location = "Des Moines"
+  date_start = "2016-06-26"
+  date_end = "2019-03-16"
+  description = """
+  Same as present.
+"""
 
 +++
