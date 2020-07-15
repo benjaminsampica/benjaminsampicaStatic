@@ -7,7 +7,7 @@ authors:
 categories:
 - JavaScript
 - DevOps
-date: "2020-05-20T00:00:00Z"
+date: "2020-07-14T00:00:00Z"
 featured: false
 draft: false
 toc: true
