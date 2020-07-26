@@ -9,9 +9,9 @@ title = "Skills"
 subtitle = "I care a lot about..."
 
 # Showcase personal skills or business features.
-# 
+#
 # Add/remove as many `[[feature]]` blocks below as you like.
-# 
+#
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
 [[feature]]
@@ -19,7 +19,7 @@ subtitle = "I care a lot about..."
   icon_pack = "fas"
   name = "ASP.NET Core"
   description = "I've been using ASP.NET Core since it's beta release and am always staying on top of the latest release."
-  
+
 
 [[feature]]
   icon = "project-diagram"
@@ -28,27 +28,27 @@ subtitle = "I care a lot about..."
   description = "The MVC pattern using ASP.NET MVC 5 was my first professional adventure into the world of web development."
 
 [[feature]]
-  icon = "microsoft"
-  icon_pack = "fab"
-  name = "Azure Devops (CI/CD)"
-  description = "I pushed for adoption of Azure DevOps at Polk County and act as the administrator of all things. I've created drop-in files for others to easily get started with a base pipeline template I built."
+  icon = "digital-tachograph"
+  icon_pack = "fas"
+  name = "DevOps"
+  description = "I'm passionate about delivering better software faster and avoiding software death spirals."
 
 [[feature]]
-  icon = "file-code"
+  icon = "user-ninja"
   icon_pack = "fas"
-  name = "Angular"
-  description = "MVC is less and less 'showy' than client-side frameworks, so I've bought and practiced through _Essential Angular for ASP.NET Core MVC 3_ and other books to get up to speed."
+  name = "Agile"
+  description = "I'm an agile pragmatist, but am convinced it is the best way to build software at this moment."
 
 [[feature]]
   icon = "file-code"
   icon_pack = "fas"
   name = "Blazor"
-  description = "The new WASM kid on the block - I've been following it very closely and have been playing with Blazor since its alpha. I prefer this over Angular or any javascript framework. :)"
+  description = "The new WASM kid on the block - I've been following it very closely and have been playing with Blazor since its alpha. I prefer this over Angular or any javascript framework."
 
 [[feature]]
   icon = "users"
   icon_pack = "fas"
   name = "Software Craftsmanship"
-  description = "I take software craftsmanship very seriously and that means skills beyond just writing code. I have a dozen books on this topic and could talk about what it means to me all day."
+  description = "I take software craftsmanship very seriously and that means skills beyond just writing code - what it means to be a professional, having pride in my work, etc."
 
 +++
