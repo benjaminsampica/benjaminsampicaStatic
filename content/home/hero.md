@@ -18,29 +18,29 @@ hero_media = ""
 
   # Background color.
   # color = "navy"
-  
+
   # Background gradient.
   # gradient_start = "#4bb4e3"
   # gradient_end = "#2b94c3"
-  
+
   # Background image.
-  image = "travel5.jpg" 
+  image = "travel5.jpg"
   image_darken = 0.6
   image_size = "cover"
   image_position = "center"
   image_parallax = true
-  
+
   # Text color (true=light or false=dark).
   text_color_light = true
 +++
 
 ## Like the millions before and those still yet to come, my journey started with "Hello World".
 
-## I naively began thinking, 
+## I naively began thinking
 
-### "Wow, I know a lot!" 
+## "Wow, I know a lot!"
 
-## and every day since 
+## and every day since
 
 ## I've slowly realized
 
