@@ -59,7 +59,7 @@ A good rule of thumb is to not shorthand anything unless it's a commonly underst
 
 One exception to this rule of consistency is one I brought up earlier - bad naming conventions the first time around. If mistakes were made in the past on naming conventions, it may be time to introduce your own locally. A notable pain spot is legacy database column names (for example `txtUsInfUsIdInt32`, which probably saved a ton of time and sense before strongly-typed, object-oriented languages really took off). It would be appropriate to locally say `UserId` to not keep carrying forward the naming convention.
 
-Obviously, the code we write _must_ be human-readable. Anyone can write code so that the machine understands it - the machine often compiles your code into a form it can read (often even more unfriendly to a human). **Thoughtful, kind, and professional developers write code that other humans can read.**
+The code we write _must_ be human-readable. Anyone can write code so that the machine understands it - the machine often compiles your code into a form it can read (often even more unfriendly to a human). **Thoughtful, kind, and professional developers write code that other humans can read.**
 
 ### Good Design
 By trying to stick with good naming conventions that are clear and concise, you may find yourself struggling with really _looooooong_ method names. It's great that you're trying to explain what your method is doing but something just doesn't feel right. Perhaps your method is really hard to name because it is simply [_doing too much?_](https://en.wikipedia.org/wiki/Single-responsibility_principle)
