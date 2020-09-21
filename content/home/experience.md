@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2020-08-17"
   date_end = ""
   description = """
-Still finding my way here :D.
+Still finding my feet here :D.
 """
 
 [[experience]]
