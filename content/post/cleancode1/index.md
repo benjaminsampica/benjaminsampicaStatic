@@ -71,10 +71,14 @@ As Kent's principle states, however, I've read even more bad code.
 
 I figured I'd share a few examples of these experiences from both ends.
 
+### I Do Work
+
 ```
 public void DoWork()
 ```
 This one came into my lap recently and I honestly found it hilarious once I thought about it for a while. Imagine a friend asking you what you do for a living. "I do work", you respond. Imagine his or her face at your response. They'd probably think you were being sarcastic or being a jerk. Literally every occupation _in the entire world_ does work, from the street sweepers all the way to the CEO of Amazon. The intentions of this method, what it _actually does_, is probably least clear I've ever read. It made no attempt to tell us what it does and is impossible to discern from the name. I'd compare it to receiving a variable of type `object` whose name is simply `aVariable`. How confusing!
+
+### Getting And Finding
 
 ```
 public IEnumerable<User> GetUsers()
@@ -84,6 +88,16 @@ public IEnumerable<User> FindUsers()
 I can see how this one would happen but I'd consider it a mistake of the second developer (confession: it was me) who didn't check first what the convention already was in the code. I like to prefix _Find_ when the possibility of the returned item can be null or empty. Likewise, I like to prefix _Get_ when the possibility of the returned item will always be fulfilled (barring exceptional circumstances, of course).
 
 This preference comes from [lots of googling around](https://www.google.com/search?q=find+vs+get&rlz=1C1CHBF_en&oq=Find+vs+Get) and my personal agreement to the argument that asking someone to "find" something (say, a tool in the garage) has the understanding that the tool could be misplaced. Asking someone to go "get" something has a more concrete understanding that the tool is there and it only need retrieved. Obviously, this only makes sense in some locations and your perception may differ but I've found it an apt example.
+
+### I No A Num and Number
+
+```
+accountNo
+accountNum
+accountNumber
+```
+
+I've seen this in various different formats but my favorite (/s) was in an accounting system. Variable names, signature parameters, and properties all varied by who wrote the code. This project was the perfect storm for this sort of issue - it had no review code review process, it had multiple developers, and there was significant skill and experience differences between developers. Some were COBOL guys and some were brand new. Ultimately, it made it really hard to make _certain_ that the variable or property you were wanting was actually what _you_ expected.
 
 ## Some Notes
 This is the first part of many that will dissect what makes good code universally good to others. Ultimately, remember that the code you write must be clear to _everyone else_ who will read it. Try grabbing a coworker and having them critique what you've written to make sure you both understand it. A few minutes today will save hours of discerning meaning later.

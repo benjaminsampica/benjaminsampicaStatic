@@ -7,7 +7,7 @@ weight = 29  # Order that this section will appear.
 
 title = "The Man Behind The Curtain"
 
-# Hero image (optional). Enter filename of an image in the `static/img/` folder.
+# Hero image (optional). Enter filename of an image in the `static/media/` folder.
 hero_media = ""
 
 [design.background]
