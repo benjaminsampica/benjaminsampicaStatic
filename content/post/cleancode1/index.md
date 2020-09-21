@@ -41,7 +41,7 @@ I've read [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craft
 So, why _is_ naming things so hard but so important?
 
 ## The Theoretical
-There are quite a few reasons covered in the above books, which I recommend you read, but the following section is broad strokes of what I took away from them. The overarching theme is being _concise and consistent_.
+There are quite a few reasons covered in the above books, which I recommend you read, but the following section is broad strokes of what I took away from them. The overarching theme is writing code that is _concise, readable, and consistent_.
 
 ### Number of Concepts
 As your software grows over time the number of problems your software solves increases. First, the business just wanted a table view of some users. Next, they wanted to be able to manage users' information. Now, they're coming back and they want you to write a report procurement piece for the user information.
