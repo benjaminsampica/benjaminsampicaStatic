@@ -38,7 +38,7 @@ I recently just finished [Implementation Patterns](https://www.amazon.com/Implem
 
 I've read [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM) by Robert Martin, who also offers excellent advice, but this sentence was concise and striking. It is why we struggle with naming things when programming, whether it be variables, methods, properties, or even going further and arguing with the business on why _their_ naming conventions are confusing.
 
-So, why _is_ naming things so hard, but so important?
+So, why _is_ naming things so hard but so important?
 
 ## The Theoretical
 There are quite a few reasons covered in the above books, which I recommend you read, but the following section is broad strokes of what I took away from them. The overarching theme is being _concise and consistent_.
@@ -59,10 +59,13 @@ A good rule of thumb is to not shorthand anything unless it's a commonly underst
 
 One exception to this rule of consistency is one I brought up earlier - bad naming conventions the first time around. If mistakes were made in the past on naming conventions, it may be time to introduce your own locally. A notable pain spot is legacy database column names (for example `txtUsInfUsIdInt32`, which probably saved a ton of time and sense before strongly-typed, object-oriented languages really took off). It would be appropriate to locally say `UserId` to not keep carrying forward the naming convention.
 
+Obviously, the code we write _must_ be human-readable. Anyone can write code so that the machine understands it - the machine often compiles your code into a form it can read (often even more unfriendly to a human). **Thoughtful, kind, and professional developers write code that other humans can read.**
+
 ### Good Design
 By trying to stick with good naming conventions that are clear and concise, you may find yourself struggling with really _looooooong_ method names. It's great that you're trying to explain what your method is doing but something just doesn't feel right. Perhaps your method is really hard to name because it is simply [_doing too much?_](https://en.wikipedia.org/wiki/Single-responsibility_principle)
 
 When you find yourself having a hard time naming something, consider breaking it out into multiple methods. A good rule of thumb is try explaining what the method does to yourself and every time you say _and_ as well as _or_ consider if it's the appropriate spot to [extract the method.](https://refactoring.guru/extract-method)
+
 
 ## The Practical
 I've written a lot of bad code in my time - code that I _know_ the person now maintaining it is looking at the commit history and cursing my name.
