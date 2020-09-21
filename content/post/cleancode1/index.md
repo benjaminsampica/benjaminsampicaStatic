@@ -87,7 +87,6 @@ This one came into my lap recently and I honestly found it hilarious once I thou
 
 ```
 public IEnumerable<User> GetUsers()
-//..
 public IEnumerable<User> FindUsers()
 ```
 I can see how this one would happen but I'd consider it a mistake of the second developer (confession: it was me) who didn't check first what the convention already was in the code. I like to prefix _Find_ when the possibility of the returned item can be null or empty. Likewise, I like to prefix _Get_ when the possibility of the returned item will always be fulfilled (barring exceptional circumstances, of course).
@@ -105,7 +104,7 @@ accountNumber
 I've seen this in various different formats but my favorite (/s) was in an accounting system. Variable names, signature parameters, and properties all varied by who wrote the code. This project was the perfect storm for this sort of issue - it had no review code review process, it had multiple developers, and there was significant skill and experience differences between developers. Some were COBOL guys and some were brand new. Ultimately, it made it really hard to make _certain_ that the variable or property you were wanting was actually what _you_ expected.
 
 ## Some Notes
-This is the first part of many that will dissect what makes good code universally good to others. Ultimately, remember that the code you write must be clear to _everyone else_ who will read it. Try grabbing a coworker and having them critique what you've written to make sure you both understand it. A few minutes today will save hours of discerning meaning later.
+This is the first part of many that will dissect what makes code universally good to others. Ultimately, remember that the code you write must be clear to _everyone else_ who will read it, not just yourself (in that moment). Try grabbing a coworker and having them critique what you've written to make sure you both understand it. A few minutes today will save hours of discerning meaning later.
 
 _Don't be that guy who writes bad code_.
 
