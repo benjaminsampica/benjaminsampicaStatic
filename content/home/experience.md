@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2020-08-17"
   date_end = ""
   description = """
-Still finding my feet here :D.
+Still finding my feet here <i class="fas fa-shoe-prints"></i>
 """
 
 [[experience]]
@@ -67,7 +67,7 @@ Finally, I wrote a base web application for Casey's IT to jump start new develop
   date_start = "2016-06-26"
   date_end = "2019-03-16"
   description = """
-  Same as present.
+  Same as 2019.
 """
 
 +++
