@@ -43,7 +43,7 @@ So, why _is_ naming things so hard but so important?
 ## The Theoretical
 There are quite a few reasons covered in the above books, which I recommend you read, but the following section is broad strokes of what I took away from them. The overarching theme is writing code that is _concise, readable, and consistent_.
 
-### Number of Concepts
+### Limiting Concepts
 As your software grows over time the number of problems your software solves increases. First, the business just wanted a table view of some users. Next, they wanted to be able to manage users' information. Now, they're coming back and they want you to write a report procurement piece for the user information.
 
 Limiting the number of vocabulary words needed to understand what the application does is important for both developers _and_ when speaking to the business about the application. Is it user _profile_ or user _information_? Is the feature a _table_ or a _list_? These concepts mean different things to different people. Hell, if enough time has passed, sometimes these concepts will mean different things _to the same person_. Thus, it's important to solidify what you're actually speaking about in your code and at the table with the client.
