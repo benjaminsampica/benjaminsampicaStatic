@@ -35,7 +35,9 @@ projects: []
 {{% toc %}}
 
 ## Introduction
-Having recently started a new job, I've been working on a product at work that utilizes Blazor Server and has the traditional trappings in the .NET Stack such as Entity Framework Core. This product was my first real foray out of [_breakable toys_](https://www.oreilly.com/library/view/apprenticeship-patterns/9780596806842/ch05s03.html) I've created using Blazor and I've run into quite a few quirks with Blazor Server, especially since the project began when Blazor Server was still in **beta**! Coming from a largely traditional MVC and API background, the biggest change has been in the way components are rendered by the server and sent to the user. Components are rendered asynchronously when they contain asynchronous code and since, out-of-the-box, Entity Framework Core (and C# language itself) encourages asynchronous code nowadays, this creates a specific problem with the traditional service registration that you may be used to with ASP.NET Core and EF Core.
+Having recently started a new job, I've been working on a product at work that utilizes Blazor Server and has the traditional trappings in the .NET Stack such as Entity Framework Core. This product was my first real foray out of [_breakable toys_](https://www.oreilly.com/library/view/apprenticeship-patterns/9780596806842/ch05s03.html) I've created using Blazor and I've run into quite a few quirks with Blazor Server, especially since the project began when Blazor Server was still in **beta**! 
+
+Coming from a largely traditional MVC and API background, the biggest change has been in the way components are rendered by the server and sent to the user. Components are rendered asynchronously when they contain asynchronous code and since, out-of-the-box, Entity Framework Core (and C# language itself) encourages asynchronous code nowadays, this creates a specific problem with the traditional service registration that you may be used to with ASP.NET Core and EF Core.
 
 ## The Theoretical
 The main documentation for ASP.NET Core and Entity Framework Core has you register your database context to your service container with something like the following
