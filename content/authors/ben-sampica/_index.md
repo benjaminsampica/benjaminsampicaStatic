@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Senior Applications Developer
+role: Senior Application Developer
 
 # Organizations/Affiliations
 organizations:
