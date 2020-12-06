@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: .NET Stack Developer
+role: Senior Applications Developer
 
 # Organizations/Affiliations
 organizations:
-- name: Polk County Administration
-  url: "https://www.polkcountyiowa.gov"
+- name: Homesteaders Life Company
+  url: "https://www.homesteaderslife.com/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I'm a web developer who focuses mostly in the ASP.NET Core sphere. When not playing hard I enjoy reading, building computers, and spending time with my family.

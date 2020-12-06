@@ -24,6 +24,7 @@ I tend to favor soft-skill books over direct technology books simply because the
 - [Peopleware: Productive Projects and Teams](https://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113)
 - [How to Win Friends and Influence People](https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034)
 - [Are Your Lights On?: How to Figure Out What the Problem Really Is](https://www.amazon.com/Are-Your-Lights-Figure-Problem/dp/0932633161)
+- [Drive: The Surprising Truth About What Motivates Us](https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805)
 
 ### Agile
 - [Succeeding with Agile: Software Development Using Scrum](https://www.amazon.com/Succeeding-Agile-Software-Development-Using-dp-0321579364/dp/0321579364)
