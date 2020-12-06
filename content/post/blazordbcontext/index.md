@@ -126,13 +126,13 @@ This might work for you if your server calls are lean and don't require change t
 
 As stated, this _will_ break change tracking for Entity Framework Core unless `SaveChanges` is called inside the same class that modified the entity. Additionally, since components could live a very long time (such as a navbar with an alert counter), you could accidentally have some very long living DbContexts unintentionally.
 
-The fourth and fifth way are identical, but the fourth way requires .NET 5.0.
+The fourth and fifth way are identical, but the fifth way requires .NET 5.0.
 
 It involves creating a DbContextFactory and using that in place of the traditional service injection.
 
-For .NET Core 3.1, refer to the documentation [here](https://docs.microsoft.com/en-us/aspnet/core/blazor/blazor-server-ef-core?view=aspnetcore-3.1#database-access-3x).
+For the fourth way, if you're using .NET Core 3.1, refer to the documentation [here](https://docs.microsoft.com/en-us/aspnet/core/blazor/blazor-server-ef-core?view=aspnetcore-3.1#database-access-3x).
 
-For .NET >=5.0, refer to the documentation [here](https://docs.microsoft.com/en-us/aspnet/core/blazor/blazor-server-ef-core?view=aspnetcore-5.0#database-access-5x).
+For the fifth way, if you're using .NET >=5.0, refer to the documentation [here](https://docs.microsoft.com/en-us/aspnet/core/blazor/blazor-server-ef-core?view=aspnetcore-5.0#database-access-5x).
 
 For .NET Core 5, you can see that the classes, interfaces, and extensions for creating an injectable DbContextFactory are part of the core library.
 
