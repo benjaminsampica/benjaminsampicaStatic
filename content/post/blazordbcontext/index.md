@@ -98,11 +98,17 @@ Since this is running in parallel, this will throw the following exception
 Ouch, that's no fun. So how do we fix this?
 
 ## The Practical
-There's four ways I've identified to fix this issue - some more palpable than others. Let's start with the least palpable one, in my opinion.
+There's five ways I've identified to fix this issue - some more palpable than others. Let's start with the least palpable one, in my opinion.
 
 > Don't use asynchronous calls to your DbContext
 
 Yeah, that doesn't feel good. There isn't much more to say beyond that this solution just feels like giving up. I dislike losing to code!
+
+Let's just move on and forget this one 😉.
+
+> Use Blazor WebAssembly that has a separate API managing the data access calls.
+
+This is exactly how it should be done if you're using Blazor WebAssembly and follows the same pattern that similar ASP.NET Core Angular or React projects look. Obviously, this is a huge effort and you're may be too far along to really pivot toward this. Likewise, it may be undesirable for other reasons.
 
 Onto the next one.
 
