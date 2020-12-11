@@ -52,7 +52,7 @@ By default, this is registers the database context as a service with a `Scoped` 
 2. Scoped - created by the service container once _per request._
 3. Singleton - created by the service container for the _entire application's lifetime._
 
-With Blazor Server, these operate largely the same as MVC or API's. Do note that Blazor WebAssembly [_does not_](https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/comparing-dependency-scopes/).
+With Blazor Server, these operate slightly different than traditional Web API or MVC, with scoped and singleton services acting very similar to each other. Scoped services live for the entire lifetime of the user, as long as they stay on that same browser tab. Singleton's live for the lifetime of every user for any tab. Do note that Blazor WebAssembly [_works differently than anything else too_](https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/comparing-dependency-scopes/).
 
 So far so good. But the issue comes into play when we realize how clients interact with the applications. Ignoring doing some heavy threading with parallel workloads, in both MVC/API projects, the server receives a singular request from a client and then the server processes that request within that request's synchronization context. The server then responds with a fully formed request and returns the page/data to the client's browser.
 
@@ -99,7 +99,7 @@ Since this is running in parallel, this will throw the following exception
 Ouch, that's no fun. So how do we fix this?
 
 ## The Practical
-There's five ways I've identified to fix this issue - some more palpable than others. Let's start with the least palpable one, in my opinion.
+There's six ways I've identified to fix this issue - some more palpable than others. Let's start with the least palpable one, in my opinion.
 
 > Don't use asynchronous calls to your DbContext
 
@@ -137,6 +137,8 @@ For the fifth way, if you're using .NET >=5.0, refer to the documentation [here]
 For .NET Core 5, you can see that the classes, interfaces, and extensions for creating an injectable DbContextFactory are part of the core library.
 
 As the documentation states, this changes your approach from injecting a `DbContext` and instead injecting the factory and creating a new `DbContext`. Keep in mind the recommended scope is _per-operation_ as well as needing disposed afterward.
+
+The sixth and final way involves working with `OwningComponentBase<>` which you can read more about [here](https://docs.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-5.0#utility-base-component-classes-to-manage-a-di-scope).
 
 ## Some Notes
 With Blazor being so new, it's hard to find documentation or even StackOverflow questions/answers on a lot of topics. However, with the release of .NET 5.0 I've found this to have improved quite a bit. If you haven't played around with Blazor Server or WASM, I'd encourage you to do it. Even with it's quirks and documentation woes, it's hard for me to imagine going back to the wild west of JavaScript and traditional MVC.
