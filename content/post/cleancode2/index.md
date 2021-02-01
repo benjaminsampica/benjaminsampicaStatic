@@ -213,7 +213,7 @@ namespace PrincipleOfAlignment
             set;
         }
 
-        // Remember to stay pragmatic about this. For example, I wouldn't keep the horizontal alignment for properties with multiple attributes, for example, if it got too long.
+        // Remember to stay pragmatic about this. For example, I wouldn't keep the horizontal alignment for properties with multiple attributes if it got too long.
         // This also ties directly into the Principle of Proximity.
     }
 }
