@@ -6,7 +6,7 @@ authors:
 - ben-sampica
 categories:
 - Software Craftsmanship
-date: "2021-1-31T00:00:00Z"
+date: "2021-01-31T00:00:00Z"
 featured: false
 draft: false
 toc: true
