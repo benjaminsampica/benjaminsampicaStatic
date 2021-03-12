@@ -116,4 +116,4 @@ It is downright *mean* to exclude this help.
 
 ## Some Notes
 
-{{< figure src="images/comments.mp4" title="Adding comments to your code in the wrong way doesn't help." lightbox="true" >}}
+{{< video src="videos/comments.mp4" controls="yes" >}}
