@@ -106,6 +106,8 @@ I've seen this in various different formats but my favorite (/s) was in an accou
 ## Some Notes
 This is the first part of many that will dissect what makes code universally good to others. Ultimately, remember that the code you write must be clear to _everyone else_ who will read it, not just yourself (in that moment). Try grabbing a coworker and having them critique what you've written to make sure you both understand it. A few minutes today will save hours of discerning meaning later.
 
+Read Part 2 [here](https://bensampica.com/cleancode2).
+
 _Don't be that guy who writes bad code_.
 
 {{< figure src="https://i.redd.it/1gt5kb38ubo51.jpg" title="" lightbox="true" >}}

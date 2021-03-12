@@ -34,6 +34,7 @@ projects: []
 ## Introduction
 
 > Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+> <br/> - Martin Fowler
 
 I recently volunteered to give a technical talk at my place of employment and I chose the topic to be on Clean Code. As something that is important to me and [I've written on before](https://www.bensampica.com/post/cleancode1/), I wanted to tackle another foundational piece of what makes Clean Code _clean_. 
 
@@ -296,4 +297,6 @@ namespace PrincipleOfProximity
 ## Some Notes
 
 As with everything, be pragmatic with the principles you apply to make your code clean. Sometimes, there's good reason to break from these and I'd be wary of
-anyone trying to apply a hard and fast, black and white rule to make these into "coding standards"
+anyone trying to apply a hard and fast, black and white rule to make these into "coding standards".
+
+Read Part 3 [here](https://bensampica.com/cleancode3).
