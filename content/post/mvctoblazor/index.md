@@ -8,7 +8,7 @@ categories:
 - ASP.NET Core
 - CSharp
 - Blazor
-date: "2020-05-11T00:00:00Z"
+date: "2021-05-11T00:00:00Z"
 featured: false
 draft: false
 toc: true
