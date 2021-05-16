@@ -17,9 +17,14 @@ subtitle = "I care a lot about..."
 [[feature]]
   icon = "code"
   icon_pack = "fas"
-  name = "ASP.NET Core"
-  description = "I've been using ASP.NET Core since it's beta release and am always staying on top of the latest release."
+  name = ".NET Core"
+  description = "I've been using .NET Core since its beta release and am always staying on top of the latest release."
 
+[[feature]]
+  icon = "file-code"
+  icon_pack = "fas"
+  name = "Blazor"
+  description = "The new WASM kid on the block - I've been following it very closely and have been playing with Blazor since its alpha. I prefer this over Angular or any JavaScript framework."
 
 [[feature]]
   icon = "project-diagram"
@@ -28,27 +33,21 @@ subtitle = "I care a lot about..."
   description = "The MVC pattern using ASP.NET MVC 5 was my first professional adventure into the world of web development."
 
 [[feature]]
-  icon = "digital-tachograph"
-  icon_pack = "fas"
-  name = "DevOps"
-  description = "I'm passionate about delivering better software faster and avoiding software death spirals."
-
-[[feature]]
   icon = "user-ninja"
   icon_pack = "fas"
   name = "Agile"
   description = "I'm an agile pragmatist, but am convinced it is the best way to build software at this moment."
 
 [[feature]]
-  icon = "file-code"
-  icon_pack = "fas"
-  name = "Blazor"
-  description = "The new WASM kid on the block - I've been following it very closely and have been playing with Blazor since its alpha. I prefer this over Angular or any javascript framework."
-
-[[feature]]
   icon = "users"
   icon_pack = "fas"
   name = "Software Craftsmanship"
   description = "I take software craftsmanship very seriously and that means skills beyond just writing code - what it means to be a professional, having pride in my work, etc."
+
+[[feature]]
+  icon = "digital-tachograph"
+  icon_pack = "fas"
+  name = "DevOps"
+  description = "I'm passionate about delivering better software faster and avoiding software death spirals."
 
 +++

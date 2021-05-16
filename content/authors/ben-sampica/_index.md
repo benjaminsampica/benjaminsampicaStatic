@@ -18,7 +18,7 @@ organizations:
   url: "https://www.homesteaderslife.com/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I'm a web developer who focuses mostly in the ASP.NET Core sphere. When not playing hard I enjoy reading, building computers, and spending time with my family.
+bio: I'm a web developer who focuses mostly in the .NET stack. When not playing hard I enjoy reading, building computers, and spending time with my family.
 
 interests:
 - Web Development
