@@ -1,6 +1,6 @@
 ---
 title: 'From MVC to Blazor Server'
-subtitle: 'Easily upgrade your ASP.NET project'
+subtitle: 'Easily upgrade your ASP.NET Core project'
 summary: 'A step-by-step guide to take your MVC project and spice it up with Blazor components - or even Blazor pages!'
 authors:
 - ben-sampica
