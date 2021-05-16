@@ -8,7 +8,7 @@ categories:
 - ASP.NET Core
 - CSharp
 - Blazor
-date: "2021-05-11T00:00:00Z"
+date: "2021-05-16T00:00:00Z"
 featured: false
 draft: false
 toc: true
@@ -46,6 +46,8 @@ So I want to bootstrap in Blazor into my existing MVC projects. But why? Some of
 3. I want CSS isolation for pages/components.
 4. I want to test my UI atomically.
 5. Finally, considering the above, I want to be able to structure my UI project into vertical slices/features without having to rewire the Razor engine against MVC's opinionated `Views` and `Areas` approach.
+
+MVC has the concept of View Components and they are nice for what they are but compared to Blazor components are a poor stand in for the latter.
 
 ## The Practical
 
@@ -100,6 +102,7 @@ Do step 1-4 but you can omit:
 - `services.AddRazorPages();`
 - `endpoints.MapToFallbackFile("/Host");`
 
+For a complete coded example [here's an example repository](https://github.com/benjaminsampica/bensampicaPostExamples/tree/master/mvcToBlazor) that has this done for you with some sample components already there to showcase use.
 
 ## Some Notes
 
