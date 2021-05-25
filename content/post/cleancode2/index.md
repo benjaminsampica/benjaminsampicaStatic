@@ -299,4 +299,4 @@ namespace PrincipleOfProximity
 As with everything, be pragmatic with the principles you apply to make your code clean. Sometimes, there's good reason to break from these and I'd be wary of
 anyone trying to apply a hard and fast, black and white rule to make these into "coding standards".
 
-Read Part 3 [here](https://bensampica.com/cleancode3).
+Read Part 3 [here](https://bensampica.com/post/cleancode3).
