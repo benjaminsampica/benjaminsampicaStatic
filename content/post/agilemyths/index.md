@@ -59,7 +59,7 @@ Largely, this stems from organizations want for the benefits but its own inelast
 
 And so many organizations and management go into their transitions with what they _feel_ like Agile is. A blindfolded brick layer laying bricks underneath their feet as they walk; entirely unguided and forging a path that _might_ be forward, but can also be sideways or even backward.
 
-Worse case is organizations that do invest in all of the above but _still_ cannot confront their own inability to change. What begins as an organization making a motivated, hopeful dive into the deep-end of change ends up swimming back to the shallow end over the weeks and months ahead. People working there, already likely resitant to change because of existing cultural factors, become tired of the constant switcheroo. Additionally, the organization likely drew lines in the sand that could not be crossed before the transition ever started - lines that Agile demands to be crossed. "Roles have to stay the same", "We still need to work on multiple things at the same time", "Agile change is only scoped to the IT department", etc.. 
+Worse case is organizations that do invest in all of the above but _still_ cannot confront their own inability to change. What begins as an organization making a motivated, hopeful dive into the deep-end of change ends up swimming back to the shallow end over the weeks and months ahead. People working there, already likely resistant to change because of existing cultural factors, become tired of the constant switcheroo. Additionally, the organization likely drew lines in the sand that could not be crossed before the transition ever started - lines that Agile demands to be crossed. "Roles have to stay the same", "We still need to work on multiple things at the same time", "Agile change is only scoped to the IT department", "We can't organize into product teams", etc.. 
 
 And so things slip away and backslide to realms more comfortable to management. Where they didn't have to confront hard empirical truths, have tough conversations with people, nor spearhead and champion experiments that will likely fail. The _old_ ways come singing a sweet song of easier times and its tune is enchanting.
 
@@ -67,7 +67,7 @@ So what are some myths that people in both of these organizations - the blindfol
 
 ## The Practical
 
-My five most common myths of Agile
+My six most common myths of Agile
 
 > "Hybrid" Agile
 
@@ -110,11 +110,11 @@ Let me be clear, however -
 
 This is just flat out wrong. I imagine this mindset coincides very deeply with the myth above (Scrum is the same thing as Agile) and people assume some very conflicting things from it.
 
-I've heard this all roles - management, developers, POs, etc. - believing that the non-perscreptive mindset of Agile means that they're free to do whatever they want. "Whatever works best for us", they say. This is a fallacy and can easily be the most damaging to the entire transition effort and a team's personal growth.
+I've heard this all roles - management, developers, POs, etc. - believing that the non-prescriptive mindset of Agile means that they're free to do whatever they want. "Whatever works best for us", they say. This is a fallacy and can easily be the most damaging to the entire transition effort and a team's personal growth.
 
 "Whatever works best for us" is short for "whatever works best for working with the organization today" - which is what organizations and teams don't want to be conceding. The best thing that works for the organization today is the existing structure because it's whats already there. Is what already exists truly the best thing though? Almost never.
 
-Most "Agile" organizations are practicing Scrum and Scrum is _very_ perscriptive on how it wants teams to perform its rituals, the roles involved, and how to invoke evolutionary change.
+Most "Agile" organizations are practicing Scrum and Scrum is _very_ prescriptive on how it wants teams to perform its rituals, the roles involved, and how to invoke evolutionary change.
 
 > Agile Is A Magic Bullet
 
@@ -130,11 +130,11 @@ As people cycle through, grow in their careers, and as the world changes around 
 
 People, through internal and external forces, will change every day for the rest of their lives. Lying to ourselves and participating in _magical thinking_ by acting like this isn't happening is a core anti-pattern to being Agile.
 
-All too often organization's that transition will treat it like they've always treated anything else - as a project. One with deliverables, specification sheets, and - most damaging - end dates. Unfortunately, being Agile never has an end date. 
+All too often organizations that transition will treat it like they've always treated anything else - as a project. One with deliverables, specification sheets, and - most damaging - end dates. Unfortunately, being Agile never has an end date. 
 
 If you’re planning on cooking eggs because you’re hungry, but then realize an egg sandwich sounds better – do you still only cook the eggs? No! You adapt, get the toaster out, grab some cheese and slap that bad boy together. Lots of things in real life you are already Agile about and you just don’t think about it in that way.
 
-All organizations are on a journey. Hopefully all of them know where they want to be as an organization in the future. Some organizations have only dirt roads to drive on which are limited in speeed and can be awfully dangerous and muddy when the weather is bad. Being Agile is instead driving on a concrete road - more resistant to weather and a heck of a lot more sturdy.
+All organizations are on a journey. Hopefully all of them know where they want to be as an organization in the future. Some organizations have only dirt roads to drive on which are limited in speed and can be awfully dangerous and muddy when the weather is bad. Being Agile is instead driving on a concrete road - more resistant to weather, a heck of a lot more sturdy, and the ability to go very fast.
 
 > Agile Is About Managing Projects/People Better
 
@@ -166,4 +166,4 @@ This is largely covered in "Scrum Is The Same Thing As Agile" and ""Hybrid" Agil
 
 ## Some Notes
 
-It's sixteen sentences. Memorize them, reflect on them, adhere to them if you believe in them. It's not hard. Everyone will be better for it.
+It's sixteen sentences. Memorize them, reflect on them, and adhere to them if you believe in them. It's not hard. Everyone will be better for it.
