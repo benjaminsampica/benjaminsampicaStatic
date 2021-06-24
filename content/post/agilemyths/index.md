@@ -143,8 +143,11 @@ This is untrue but I'll admit it can seem that way. The original Manifesto was c
 The key part of being Agile is about developers and their level of professionalism and craftsmanship. As Kent stated above, the Agile movement has been sort of taken over by malevolent forces and so many have appended on a new manifesto called [The Software Craftsman Manifesto](https://manifesto.softwarecraftsmanship.org/).
 
 > Not only working software, but also well-crafted software
+
 > Not only responding to change, but also steadily adding value
+
 > Not only individuals and interactions, but also a community of professionals
+
 > Not only customer collaboration, but also productive partnerships
 
 If you're a developer, here's some questions for you:
