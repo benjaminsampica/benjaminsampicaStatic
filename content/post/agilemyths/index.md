@@ -136,6 +136,25 @@ If you’re planning on cooking eggs because you’re hungry, but then realize a
 
 All organizations are on a journey. Hopefully all of them know where they want to be as an organization in the future. Some organizations have only dirt roads to drive on which are limited in speeed and can be awfully dangerous and muddy when the weather is bad. Being Agile is instead driving on a concrete road - more resistant to weather and a heck of a lot more sturdy.
 
+> Agile Is About Managing Projects/People Better
+
+This is untrue but I'll admit it can seem that way. The original Manifesto was created by sixteen _developers_ who were fed up with the existing status quo. They gathered in Utah and forged a document that, at its roots, is about software craftsmanship. 
+
+The key part of being Agile is about developers and their level of professionalism and craftsmanship. As Kent stated above, the Agile movement has been sort of taken over by malevolent forces and so many have appended on a new manifesto called [The Software Craftsman Manifesto](https://manifesto.softwarecraftsmanship.org/).
+
+> Not only working software, but also well-crafted software
+> Not only responding to change, but also steadily adding value
+> Not only individuals and interactions, but also a community of professionals
+> Not only customer collaboration, but also productive partnerships
+
+If you're a developer, here's some questions for you:
+
+- Are you writing tests alongside your production code? 
+- Are you taking your time to write clean, maintainable code? 
+- Are you collaborating with other members on your team to craft solutions that are the best for _everyone_? 
+
+If any of these made you wince it might be time to take a look in the mirror and see how you can be the change you want to see.
+
 ### Honorable Mentions
 
 > "The Agile Methodology"
