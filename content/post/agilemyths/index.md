@@ -164,6 +164,6 @@ If any of these made you wince it might be time to take a look in the mirror and
 
 This is largely covered in "Scrum Is The Same Thing As Agile" and ""Hybrid" Agile" but Agile is a mindset. Like "Scrum Is The Same Thing As Agile", I believe this boils down to people combining all of these into one thing and believing them to be the same.
 
-# Notes
+## Some Notes
 
 It's sixteen sentences. Memorize them, reflect on them, adhere to them if you believe in them. It's not hard. Everyone will be better for it.
