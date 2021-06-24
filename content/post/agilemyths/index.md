@@ -53,7 +53,7 @@ Ouch... That's not a good look. So what has happened?
 ## The Theoretical
 
 Organizations have jumped on the Agile bandwagon, viewing the success of the few organizations that _have_ adopted Agile successfully and transformed their organizations but not understanding all the internalized
-change that happened out of sight in order to get there. These "better-than-not-doing-it" Agile organization's follow _Zombie Agile_ and it's exactly as it sounds - a lifeless, soulless, shambling corpse of what it truly could be. 
+change that happened out of sight in order to get there. These "better-than-not-doing-it" Agile organizations follow _Zombie Agile_ and it's exactly as it sounds - a lifeless, soulless, shambling corpse of what it truly could be. 
 
 Largely, this stems from organizations want for the benefits but its own inelasticity to change to make it happen. I mentioned above people's inability to read sixteen sentences - yet asking for actual training, coaching, and investment ($$) long-term into change? Short-term pain, introspection, and reduction of output for long-term benefit? Wait, hold up. Pump the breaks - we can't stop normal work!
 
