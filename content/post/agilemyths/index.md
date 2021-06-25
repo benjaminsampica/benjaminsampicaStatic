@@ -110,9 +110,9 @@ Let me be clear, however -
 
 This is just flat out wrong. I imagine this mindset coincides very deeply with the myth above (Scrum is the same thing as Agile) and people assume some very conflicting things from it.
 
-I've heard this all roles - management, developers, POs, etc. - believing that the non-prescriptive mindset of Agile means that they're free to do whatever they want. "Whatever works best for us", they say. This is a fallacy and can easily be the most damaging to the entire transition effort and a team's personal growth.
+I've heard this at all levels and roles - management, developers, POs, etc. - believing that the non-prescriptive mindset of Agile means that they're free to do whatever they want. "Whatever works best for us", they will say. This is a fallacy and can easily be the most damaging to the entire transition effort and a team's personal growth.
 
-"Whatever works best for us" is short for "whatever works best for working with the organization today" - which is what organizations and teams don't want to be conceding. The best thing that works for the organization today is the existing structure because it's whats already there. Is what already exists truly the best thing though? Almost never.
+"Whatever works best for us" is short for "whatever works best for working with the organization today" - which is what organizations and teams don't want to be conceding. The best thing that works for the organization today is the existing structure because it's whats already there. Is what already exists truly the best thing though? _Almost never._
 
 Most "Agile" organizations are practicing Scrum and Scrum is _very_ prescriptive on how it wants teams to perform its rituals, the roles involved, and how to invoke evolutionary change.
 
